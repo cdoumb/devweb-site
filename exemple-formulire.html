@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Formulaire d'authentification</h1>
+    <form action="authentification.php" method="get">
+       <p>
+        <label for="login">Votre login</label>
+        <input type="text" name="login" />
+      </p>
+      <p>
+        <label for="motpasse">Votre mot de passe</label>
+        <input type="text" name="motpasse" />
+      </p>
+      <p>
+        <label for="role">Votre role</label>
+        <input type="radio" name="role" value="Admin" />Admin
+        <input type="radio" name="role" value="Client" />Client
+      </p>
+      <p> <label for="message">Message :</label><br>
+        <textarea name="message" id="message" rows="4" cols="40"></textarea><br><br></p>
+      <p> <label for="pays">Pays :</label>
+        <select name="pays" id="pays">
+          <option value="sn">Sénégal</option>
+          <option value="ci">Côte d'Ivoire</option></p>
+      <input type="submit" value="Se connecter" />
+    </form>
+  </body>
+</html>
